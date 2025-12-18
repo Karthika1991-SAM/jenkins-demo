@@ -79,7 +79,7 @@ Emails are sent automatically after each build with:
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/jenkins-demo.git
+git clone https://github.com/KArthika1991-SAM/jenkins-demo.git
 cd jenkins-demo
 ```
 
@@ -141,3 +141,4 @@ Aspiring DevOps Engineer
 ---
 
 ⭐ If you found this useful, feel free to fork or star the repository!
+
