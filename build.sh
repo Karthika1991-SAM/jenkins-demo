@@ -1,4 +1,14 @@
 #!/bin/bash
-echo "Build started"
-date
-echo "Build completed successfully"
+set -e
+
+echo "=============================="
+echo " Jenkins Build Started"
+echo "=============================="
+
+echo "Workspace:"
+pwd
+
+echo "Listing files:"
+ls -la
+
+echo "Build successful ✅"
