@@ -1,0 +1,50 @@
+Started by user Karthika Murali
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/github-auto-build
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/github-auto-build/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Karthika1991-SAM/jenkins-demo # timeout=10
+Fetching upstream changes from https://github.com/Karthika1991-SAM/jenkins-demo
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/Karthika1991-SAM/jenkins-demo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 1022f088fc7b91f7e7d8213d18d77fc1139e7c72 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1022f088fc7b91f7e7d8213d18d77fc1139e7c72 # timeout=10
+Commit message: "Fix build.sh and make it executable for Jenkins"
+ > git rev-list --no-walk f9fdfd8f2c92860b818b119ac89783bcb105b1ba # timeout=10
+No emails were triggered.
+[github-auto-build] $ /bin/sh -xe /tmp/jenkins7439970917097473548.sh
++ chmod +x build.sh
++ ls -la
+total 24
+drwxr-xr-x 3 jenkins jenkins 4096 Dec 18 17:41 .
+drwxr-xr-x 3 jenkins jenkins 4096 Dec 18 17:28 ..
+drwxr-xr-x 8 jenkins jenkins 4096 Dec 18 17:41 .git
+-rw-r--r-- 1 jenkins jenkins    0 Dec 18 17:28 README.md
+-rw-r--r-- 1 jenkins jenkins   74 Dec 18 17:28 build,sh   
+-rwxr-xr-x 1 jenkins jenkins  208 Dec 18 17:41 build.sh
+-rw-r--r-- 1 jenkins jenkins   16 Dec 18 17:28 test.txt
++ ./build.sh
+==============================
+ Jenkins Build Started
+==============================
+Workspace:
+/var/lib/jenkins/workspace/github-auto-build
+Listing files:
+total 24
+drwxr-xr-x 3 jenkins jenkins 4096 Dec 18 17:41 .
+drwxr-xr-x 3 jenkins jenkins 4096 Dec 18 17:28 ..
+drwxr-xr-x 8 jenkins jenkins 4096 Dec 18 17:41 .git
+-rw-r--r-- 1 jenkins jenkins    0 Dec 18 17:28 README.md
+-rw-r--r-- 1 jenkins jenkins   74 Dec 18 17:28 build,sh   
+-rwxr-xr-x 1 jenkins jenkins  208 Dec 18 17:41 build.sh
+-rw-r--r-- 1 jenkins jenkins   16 Dec 18 17:28 test.txt
+Build successful ✅
+Email was triggered for: Always
+Sending email for trigger: Always
+Not sending mail to unregistered user (id: rajakarthika19, email: rajakarthika19@gmail.com) because your SCM claimed this was associated with a user ID 'rajakarthika19' which your security realm does not recognize; you may need changes in your SCM plugin
+Sending email to: rajendrankarthika1991@gmail.com
